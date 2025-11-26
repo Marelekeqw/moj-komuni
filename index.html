@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bezpieczny Komunikator</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+<div id="login-box">
+    <h2>Logowanie / Rejestracja</h2>
+    <input type="text" id="username" placeholder="Nazwa użytkownika">
+    <button onclick="login()">Zaloguj / Zarejestruj</button>
+</div>
+
+<div id="chat-box" style="display:none;">
+    <h2>Chat</h2>
+    <div id="messages"></div>
+    <input type="text" id="messageInput" placeholder="Wpisz wiadomość">
+    <input type="file" id="fileInput">
+    <button onclick="sendMessage()">Wyślij</button>
+</div>
+
+<script src="chat.js"></script>
+</body>
+</html>
